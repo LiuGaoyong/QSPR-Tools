@@ -1,0 +1,27 @@
+QSPRTools	-- Young @ 20170126
+
+All files had been tested:
+	.py file is based on Python 3.5.2 and xlrd/xlwt module
+	sh files are based CentOS 6.8
+
+
+Some scripts(bash) that can calculate only one molecule descriptor.
+They are :
+	molMass		--molecular total mass(a.u. 1aum=9.109534E-31Kg)
+	totEnergy	--molecular total energy(a.u. 1=4.35981E-18J=27.2116eV)
+	dipMoment	--molecular dipole moment(Debye)
+	nhomoE		--the energy of the next HOMO in this molecule
+	homoE		--the energy of the HOMO in this molecule
+	lumoE		--the energy of the LUMO in this molecule
+	nlomoe		--the energy of the next LOMO in this molecule
+
+Note:
+	1. These are based on GaussianOutfiles(.log) 
+	2. They all only can handle one file (can not handle *.log)
+
+How to use it:
+	run main.py
+	input the path of your Gaussain Outfiles
+	input the patn of your .xls file
+	
+	Then, you can handle your  .xls file to get the useful infomation 

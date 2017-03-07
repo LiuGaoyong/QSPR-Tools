@@ -1,0 +1,3 @@
+#!/bin/bash
+
+grep -1 'Dipole moment' $1 | tail -n 3 | grep -P '[0-9]+\.[0-9]+' -o | tail -n 1

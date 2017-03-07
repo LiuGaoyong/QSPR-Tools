@@ -1,0 +1,3 @@
+#!/bin/bash
+
+grep 'SCF' $1 | grep '  1 cycles' | grep -P '(-)?[0-9]+\.[0-9]+' -o
